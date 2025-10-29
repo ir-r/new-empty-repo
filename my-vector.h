@@ -135,14 +135,14 @@ class my_vector {
 
     T& at(std::size_t i) {
         if (i >= actual_size_) {
-            throw std::out_of_range("my_vector::vector::at");
+            throw std::out_of_range("my_vector::at");
         }
         return data_ptr_[i];
     }
 
     const T& at(std::size_t i) const {
         if (i >= actual_size_) {
-            throw std::out_of_range("my_vector::vector::at");
+            throw std::out_of_range("my_vector::at");
         }
         return data_ptr_[i];
     }
